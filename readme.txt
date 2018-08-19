@@ -18,7 +18,7 @@ Github-page: https://github.com/freddan88/mediasorter-windows
 Download: 
 Exiftool: https://www.sno.phy.queensu.ca/~phil/exiftool/index.html
 
-Guide:
+Guide: https://github.com/freddan88/mediasorter-windows/blob/master/readme.txt
 Video:
 
 Platform: Windows

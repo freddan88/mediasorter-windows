@@ -1,0 +1,49 @@
+
+dir /B /L /A-D .\$files\*.png > .\txt\files.txt 2>nul
+for /f "tokens=1,2 delims=." %%a in (.\txt\files.txt) do (
+	.\bin\exiftool.exe ".\$files\%%a.%%b" | find /I "File Modification Date/Time" > .\txt\created.txt
+	for /f "tokens=5,6 delims= " %%c in (.\txt\created.txt) do (
+		echo %%c%%d > .\txt\dates.txt
+		for /f "tokens=1,2,3,4,5,6 delims=: " %%e in (.\txt\dates.txt) do (
+			for /f "tokens=1,2 delims=." %%k in ('echo %%e%%f%%g%%h%%i%%j') do (
+			for /f "tokens=1,2 delims=+" %%m in ('echo %%k') do (
+			echo File: %%a.%%b
+			echo Name: %%m
+			echo Year: %%e
+			)
+			)
+		)
+	)
+echo.
+)
+2018-08-16
+
+	for /f "tokens=4,5 delims= " %%c in (.\txt\created.txt) do (
+		for /f "tokens=1,2,3,4,5,6 delims=: " %%e in ('echo %%c:%%d') do (
+			echo 0,%%e>.\txt\year.txt
+			for /f "tokens=1,2 delims=, " %%k in ('echo 0,%%e') do (
+				
+				if %%k%%l LEQ 0 (
+				echo ----------------------------------------------------------------------
+				echo Old Filename: %%a.%%b
+				echo New Filename: %%a.%%b
+				echo.
+				echo DateTime: Date and time missing;
+				echo Filepath: Move to $files\No Date
+				echo ----------------------------------------------------------------------
+				)
+				
+				if %%k%%l GTR 0 (
+				echo ----------------------------------------------------------------------
+				echo Old Filename: %%a.%%b
+				echo New Filename: %%e%%f%%g%%h%%i%%j
+				echo.
+				echo DateTime: %%e:%%f:%%g %%h:%%i:%%j
+				echo Filepath: Move to $files\%%e
+				echo ----------------------------------------------------------------------
+				)
+			)
+		)
+	)
+)
+pause
