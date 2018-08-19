@@ -10,10 +10,6 @@ cd %~dp0
 ::
 :: YouTube: https://www.youtube.com/user/FreLee54
 :: WebPage: http://www.leemann.se/fredrik
-::
-:: Tutorial:
-:: Video:
-::
 
 dir /B /L /A-D .\$files\* > .\txt\files.txt
 for /f "tokens=1,2 delims=." %%a in (.\txt\files.txt) do (

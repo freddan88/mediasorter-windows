@@ -10,10 +10,6 @@ cd %~dp0
 ::
 :: YouTube: https://www.youtube.com/user/FreLee54
 :: WebPage: http://www.leemann.se/fredrik
-::
-:: Tutorial:
-:: Video:
-::
 
 if not exist .\seq.log (
 	echo -1 > .\seq.log
