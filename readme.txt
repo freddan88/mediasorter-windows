@@ -15,7 +15,7 @@ YouTube: https://www.youtube.com/user/FreLee54
 Github-main: https://github.com/freddan88
 Github-page: https://github.com/freddan88/mediasorter-windows
 
-Download: 
+Download: http://www.leemann.se/fredrik/file_downloads/mediasorter_windows-cmd.zip
 Exiftool: https://www.sno.phy.queensu.ca/~phil/exiftool/index.html
 
 Guide: https://github.com/freddan88/mediasorter-windows/blob/master/readme.txt
@@ -38,7 +38,7 @@ Instructions:
 
 1.
 Download this project and extract it anywhere in Windows
-Download: 
+Download: http://www.leemann.se/fredrik/file_downloads/mediasorter_windows-cmd.zip
 
 2.
 Download ExifTool by Phil Harvey for Windows and rename the file to exiftool.exe
