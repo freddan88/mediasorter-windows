@@ -1,0 +1,2 @@
+Upload your pictures and videos to this folder
+Currently supports: .jpg / .mov / .mpg / .png files
