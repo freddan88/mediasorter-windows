@@ -24,6 +24,10 @@ Video:
 Platform: Windows
 Language: Batch
 
+----------------------------------------------------
+License MIT: https://choosealicense.com/licenses/mit
+----------------------------------------------------
+
 ------------
 Description:
 ------------
