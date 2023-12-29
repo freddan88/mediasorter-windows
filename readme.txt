@@ -1,3 +1,8 @@
+2023-12-29
+Encountered an error were video-files weren´t sorted properly
+Please use my universal file-sorter supported by Windows/Mac/Linux
+Link: https://github.com/freddan88/mediasorter-generic-php
+
 ------------
 START README
 ------------
